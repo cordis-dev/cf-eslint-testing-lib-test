@@ -1,5 +1,11 @@
 {
+  "plugins": ["testing-library"],
   "extends": ["plugin:testing-library/recommended"],
+  "rules": {
+    "testing-library/await-async-query": "error",
+    "testing-library/no-await-sync-query": "error",
+    "testing-library/no-manual-cleanup": "error"
+  },    
   "env": {
     "browser": true,
     "es6": true,
